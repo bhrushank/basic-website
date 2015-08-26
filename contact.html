@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact-Ubuntu Geeks</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="contact.js" type="text/javascript"></script>
+	<script src="main.js"></script>
+</head>
+
+<body class="body">
+	<div id="cssswitch">
+		<p>
+			<a href="#" onclick="theme('main.css')">Default</a>
+			&#124;
+	   		<a href="#" onclick="theme('main2.css')">Aubergine</a>
+   		</p>
+   </div>
+	<header class="mainHeader">
+		<h1><a href="index.html"> Ubuntu Geeks </a> </h1>
+		<nav><ul>
+			<li> <a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery </a></li>
+			<li><a href="essentials.html">Essential Software</a></li>
+			<li><a href="system.html">System Requirements</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul></nav>
+	</header>
+		
+	<div class="mainContent">
+		<article class="topcontent">	
+			<form class="messageform" name="contact" action="contact.html" onsubmit="return validate_form(this);">
+				<fieldset>
+					<legend>Your Message</legend>
+					<label for="name">Name:</label><input type="text" name="name" id="name" size="30" class="input"><br />
+					<label for="email">Email:</label><input type="text" name="email" id="email" size="30" class="input"><br />
+					<label for="message">Message:</label><br />
+					<textarea rows="10" cols="80" id="message" name="message" class="input">
+			
+					</textarea></br />
+					<label for="send"><input type="submit" value="Send" class="button" id="send">
+					<label for="reset"><input type="reset" value="Reset" class="button" id="reset">
+				</fieldset>
+			</form>
+		</article>
+	</div>
+	
+	<footer class="mainFooter">
+		<p>Copyright &copy; 2014 Ubuntu Geeks All Rights Reserved.</p>
+	</footer>
+
+</body>
+</html>

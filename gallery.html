@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gallery-Ubuntu Geeks</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" ></script>
+	<script src="gallery.js"></script>
+</head>
+
+<body class="body">
+	<div id="cssswitch">
+	<p>
+		<a href="#" onclick="theme('main.css')">Default</a>
+		&#124;
+	   <a href="#" onclick="theme('main2.css')">Aubergine</a>
+   </p>
+	<header class="mainHeader">
+		<h1><a href="index.html"> Ubuntu Geeks </a> </h1>
+		<nav><ul>
+			<li> <a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery </a></li>
+			<li><a href="essentials.html">Essential Software</a></li>
+			<li><a href="system.html">System Requirements</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			
+			
+		</ul></nav>
+	</header>
+		
+	<div class="mainContent">
+		<article class="topcontent">	
+			<header>
+				<h2><a href="#" rel="bookmark" title="Permalink to this POST TITLE">Gallery</a></h2>
+			</header>
+					
+					
+			<p>With the implementation of Unity since 11.04, Ubuntu had major changes in terms of user interface. It's faster, easier and one of the most elegant looking operating system out there. The latest Ubuntu release </p>
+			<div id=slideshow>
+				<form>
+					<img src="ubuntu0.jpg" name="slide" width="800" height="450">
+					<br>
+					<div id="sildenumber"><div id="PN" name="PN">Boot</div>
+						<label for="forward"><input type="button" value="Previous" onClick="gobackward()" class="button" id="forward"></label>
+						<label for="backward"><input type="button" value="Next" onClick="goforward()" class="button" id="backward"></label>
+					</div>
+				</form>
+			</div>
+		</article>
+	</div>
+	
+	<footer class="mainFooter">
+		<p>Copyright &copy; 2014 Ubuntu Geeks All Rights Reserved.</p>
+	</footer>
+    
+
+</body>
+</html>
